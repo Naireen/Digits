@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_gradient"
+    android:id="@+id/fullScreenLayout">
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topClouds"
+        android:src="@drawable/clouds_on_top1"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="font"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Multiplayer Options" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/timer"
+        android:text="Play with Other People!"
+        android:id="@+id/guess"
+        android:textColor="#ff437863"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="  When playing with other people, the goal is to get the number before they do."
+        android:id="@+id/long_blurb"
+        android:textColor="#ff437863"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_below="@+id/long_blurb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="  A score of zero will be awarded to you if the opponent exits out of the game, or if you exit yourself. You will win with a score of 0 if your opponent loses before you guess the right number. The only way to score is to guess your number before they guess theirs."
+        android:id="@+id/long_blurb2"
+        android:layout_centerVertical="true"
+        android:textColor="#ff437863"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_below="@+id/long_blurb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="  You can see your opponents progress on the side of your game screen."
+        android:id="@+id/long_blurb3"
+        android:layout_centerVertical="true"
+        android:textColor="#ff437863"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
